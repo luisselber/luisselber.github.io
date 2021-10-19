@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Rex Game</title>
+    <link rel="shortcut icon" href="media/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="game">
+        <canvas id="Ground_Canvas" width="600px"></canvas>
+        <canvas id="Cloud1_Canvas" width="600px"></canvas>
+        <canvas id="Cloud2_Canvas" width="600px"></canvas>
+        <canvas id="Small_Cactus_Canvas" width="600px"></canvas>
+
+        <p id="score">
+            <span id="score_n"></span>
+        </p>
+
+        <img id="ground" src="media/ground.png" alt="ground - image" style="display: none;">
+
+        <img id="cloud" src="media/cloud.png" alt="cloud - image" style="display: none;">
+
+        <img id="small_cactus" src="media/cactus.png" alt="single cactus - image">
+
+        <img id="dino" src="media/dino_S1.png" alt="dino, state 1 - image">
+
+        <p id="game_over_msg"></p>
+
+        <audio id="jump_audio" controls style="display:none">
+            <source src="media/jump.ogx">
+        </audio>
+
+        <audio id="multiple_100_audio" controls style="display:none">
+            <source src="media/multiple_of_100_score.ogx">
+        </audio>
+
+        <audio id="game-over_audio" controls style="display:none">
+            <source src="media/game-over.ogx">
+        </audio>
+    </div>
+
+    <div id="No_Internet_Design">
+        <p class="No_Int">No internet</p>
+        <p>Try:</p>
+        <ul>
+            <li>Checking the network cables, modem, and router</li>
+            <li>Reconnecting to WI-FI</li>
+            <li>Running Network Diagnostics</li>
+        </ul>
+        <p style="margin-top: 15px;">ERR_INTERNET_DISCONNECTED</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
